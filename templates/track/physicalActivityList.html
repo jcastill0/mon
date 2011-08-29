@@ -1,0 +1,19 @@
+{% extends "track/physicalBase.html" %}
+
+{% block main %}
+
+  <div id="main" class="wrapper">
+    <h3>List of Physical Activities</h3>
+    {% if physical_activity_list %}
+      <ul>
+      {% for physicalActivity in physical_activity_list %}
+        <li><a href="/track/physicalactivity/{{ physicalActivity.id }}/">{{ physicalActivity.event}}</a></li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <p>No events are available.</p>
+    {% endif %}
+  </div>
+ 
+{% endblock %}
+

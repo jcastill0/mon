@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Health Monitor</title>
+    <meta name="keywords" content="monitor, health, physical activity, diet"/>
+    <meta encoding="utf-8"/>
+    <script type="text/javascript" src="http://localhost:8008/js/jquery-1.6.2.min.js"></script>
+    <link href="http://localhost:8008/css/style.css" rel="stylesheet" type="text/css" />
+    
+    {% block extra_js %}{% endblock %}
+  </head>
+  <body>
+    <div id="header-container">
+      <header class="wrapper">
+        <img src="http://localhost:8008/img/logo.png" width="70" height"84"/>
+	<h1 id="title">HealthMon</h1>
+	Welcome
+	{% block user_links_strip %}{% endblock %}
+      </header>
+    </div>
+    
+    {% block main %}{% endblock %}
+
+    <div id="footer-container">
+      <footer class="wrapper">
+        <p>Copyright &copy; 2011 The Health Monitoring Company&trade;<br/>
+No material may be reproduced without written permission<br/>
+        <a href="mailto:julio.castillo.2010@gmail.com?subject=Question/Comment" title="julio.castillo.2010@healthmon.com">Contact the Webmaster</a></p>
+      </footer>
+    </div>
+  
+  </body>
+</html>
